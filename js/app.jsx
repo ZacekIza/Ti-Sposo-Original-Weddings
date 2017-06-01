@@ -64,8 +64,14 @@ class AboutUs extends React.Component{
   render() {
     return (
       <section id="aboutUs">
-        <div className="container">
-
+       <div className="container">
+        <div className="row idCards">
+          <div className="col-4">
+            <div>Magdalena Tekiel</div>
+            <div>Nasza Agencj Ślubna</div>
+            <div>Izabela Zackiewicz</div>
+          </div>
+        </div>
        </div>
       </section>
     );

@@ -72,6 +72,7 @@ nav {
   position:fixed;
   top: 0;
   width: 100%;
+  margin-left: -225px;
   a:link{
     text-decoration: none;
     color: black;
@@ -84,7 +85,7 @@ nav {
     text-decoration: none;
     color: black;
     font-weight: bold;
-  }  
+  }
   a:active{
     text-decoration: none;
     color: black;
@@ -94,6 +95,14 @@ nav {
   background-color: $mainBlue;
   @include allScreen;
 }
+.idCards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-4 div{
+  float: left;
+}  
 #howItWorks{
   background-color: $mainPink;
   @include allScreen;
@@ -111,8 +120,11 @@ nav {
 }
 .galleryPic{
   width: 25%;
-  height: 430px;
+  height: 483px;
   background-size: cover;
+  &:hover{
+    opacity: 0.5;
+  }
 }
 #contact{
   background-color: $mainBlue;

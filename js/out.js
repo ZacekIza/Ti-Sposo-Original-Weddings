@@ -12908,7 +12908,33 @@ var AboutUs = function (_React$Component3) {
       return _react2.default.createElement(
         'section',
         { id: 'aboutUs' },
-        _react2.default.createElement('div', { className: 'container' })
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'row idCards' },
+            _react2.default.createElement(
+              'div',
+              { className: 'col-4' },
+              _react2.default.createElement(
+                'div',
+                null,
+                'Magdalena Tekiel'
+              ),
+              _react2.default.createElement(
+                'div',
+                null,
+                'Nasza Agencj \u015Alubna'
+              ),
+              _react2.default.createElement(
+                'div',
+                null,
+                'Izabela Zackiewicz'
+              )
+            )
+          )
+        )
       );
     }
   }]);

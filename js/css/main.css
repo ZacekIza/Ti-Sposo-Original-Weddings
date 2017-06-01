@@ -96,6 +96,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  margin-left: -225px;
 }
 
 nav a:link {
@@ -125,6 +126,16 @@ nav a:active {
   width: 100vw;
 }
 
+.idCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-4 div {
+  float: left;
+}
+
 #howItWorks {
   background-color: deeppink;
   height: 100vh;
@@ -149,8 +160,12 @@ nav a:active {
 
 .galleryPic {
   width: 25%;
-  height: 430px;
+  height: 483px;
   background-size: cover;
+}
+
+.galleryPic:hover {
+  opacity: 0.5;
 }
 
 #contact {
