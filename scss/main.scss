@@ -1,0 +1,128 @@
+// @font-face {
+// 	font-family: 'Amatic SC';
+// 	src: url('../amatic/AmaticSC-Regular.eot');
+// 	src: url('../amatic/AmaticSC-Regular.eot?#iefix') format('embedded-opentype'),
+// 		url('../amatic/AmaticSC-Regular.woff') format('woff'),
+// 		url('../amatic/AmaticSC-Regular.ttf') format('truetype');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+//
+// @font-face {
+// 	font-family: 'Amatic';
+// 	src: url('../amatic/Amatic-Bold.eot');
+// 	src: url('../amatic/Amatic-Bold.eot?#iefix') format('embedded-opentype'),
+// 		url('../amatic/Amatic-Bold.woff') format('woff'),
+// 		url('../amatic/Amatic-Bold.ttf') format('truetype');
+// 	font-weight: bold;
+// 	font-style: normal;
+// }
+$mainPink: deeppink;
+$mainBlue: darkturquoise;
+@mixin allScreen{
+  height: 100vh;
+  width: 100vw;
+}
+@mixin clearfix {
+    &:after,
+    &:before {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}   
+*{
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Amatic SC', cursive;
+}
+html, body {
+  overflow-x: hidden;
+}
+.container{
+  max-width: 1400px;
+  @include allScreen;
+}
+#home{
+ background-size: cover;
+ @include allScreen;
+}
+#header{
+  @include clearfix;
+  [class*='col-'] {
+            float: left;
+            box-sizing: border-box;
+            width: 8.3332%;
+            /*padding: 0 15px;*/
+            margin: 15px 0;
+            min-height: 1px;
+            @media (max-width: 600px) {
+                width: 100% !important;
+            }
+        }
+  @for $i from 1 through 12 {
+            .col-#{$i} {
+                width: 8.3332% * $i;
+            }
+        }
+    }
+nav {
+  font-size: 60px;
+  display: flex;
+  a:link{
+    text-decoration: none;
+    color: black;
+  }
+  a:visited{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  a:active{
+    text-decoration: none;
+    color: black;
+  }
+}
+#aboutUs{
+  background-color: $mainBlue;
+  @include allScreen;
+}
+#howItWorks{
+  background-color: $mainPink;
+  @include allScreen;
+}
+#offer{
+  background-color: $mainBlue;
+  @include allScreen;
+}
+#gallery{
+  background-color: $mainPink;
+  @include allScreen;
+}
+#contact{
+  background-color: $mainBlue;
+  @include allScreen;
+}
+#logo{
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+}
+#foot{
+  text-align: center;
+  margin-top: 710px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bolder;
+  .textBlue{
+    color: $mainBlue;
+  }
+  .textPink{
+    color: $mainPink;
+  }
+}

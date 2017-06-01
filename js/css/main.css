@@ -1,0 +1,171 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Amatic SC', cursive;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  height: 100vh;
+  width: 100vw;
+}
+
+#home {
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+#header:after,
+#header:before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#header [class*='col-'] {
+  float: left;
+  box-sizing: border-box;
+  width: 8.3332%;
+  /*padding: 0 15px;*/
+  margin: 15px 0;
+  min-height: 1px;
+}
+
+@media (max-width: 600px) {
+  #header [class*='col-'] {
+    width: 100% !important;
+  }
+}
+
+#header .col-1 {
+  width: 8.3332%;
+}
+
+#header .col-2 {
+  width: 16.6664%;
+}
+
+#header .col-3 {
+  width: 24.9996%;
+}
+
+#header .col-4 {
+  width: 33.3328%;
+}
+
+#header .col-5 {
+  width: 41.666%;
+}
+
+#header .col-6 {
+  width: 49.9992%;
+}
+
+#header .col-7 {
+  width: 58.3324%;
+}
+
+#header .col-8 {
+  width: 66.6656%;
+}
+
+#header .col-9 {
+  width: 74.9988%;
+}
+
+#header .col-10 {
+  width: 83.332%;
+}
+
+#header .col-11 {
+  width: 91.6652%;
+}
+
+#header .col-12 {
+  width: 99.9984%;
+}
+
+nav {
+  font-size: 60px;
+  display: flex;
+}
+
+nav a:link {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav a:active {
+  text-decoration: none;
+  color: black;
+}
+
+#aboutUs {
+  background-color: darkturquoise;
+  height: 100vh;
+  width: 100vw;
+}
+
+#howItWorks {
+  background-color: deeppink;
+  height: 100vh;
+  width: 100vw;
+}
+
+#offer {
+  background-color: darkturquoise;
+  height: 100vh;
+  width: 100vw;
+}
+
+#gallery {
+  background-color: deeppink;
+  height: 100vh;
+  width: 100vw;
+}
+
+#contact {
+  background-color: darkturquoise;
+  height: 100vh;
+  width: 100vw;
+}
+
+#logo {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+}
+
+#foot {
+  text-align: center;
+  margin-top: 710px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+#foot .textBlue {
+  color: darkturquoise;
+}
+
+#foot .textPink {
+  color: deeppink;
+}
