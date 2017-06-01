@@ -30,7 +30,7 @@ $mainBlue: darkturquoise;
         clear: both;
         display: table;
     }
-}   
+}
 *{
   margin: 0 auto;
   padding: 0;
@@ -41,7 +41,7 @@ html, body {
 }
 .container{
   max-width: 1400px;
-  @include allScreen;
+  width: 100%;
 }
 #home{
  background-size: cover;
@@ -69,6 +69,9 @@ html, body {
 nav {
   font-size: 60px;
   display: flex;
+  position:fixed;
+  top: 0;
+  width: 100%;
   a:link{
     text-decoration: none;
     color: black;
@@ -81,7 +84,7 @@ nav {
     text-decoration: none;
     color: black;
     font-weight: bold;
-  }
+  }  
   a:active{
     text-decoration: none;
     color: black;
@@ -100,8 +103,16 @@ nav {
   @include allScreen;
 }
 #gallery{
-  background-color: $mainPink;
+  background-color: white;
   @include allScreen;
+}
+.col-3 div{
+  float: left;
+}
+.galleryPic{
+  width: 25%;
+  height: 430px;
+  background-size: cover;
 }
 #contact{
   background-color: $mainBlue;
