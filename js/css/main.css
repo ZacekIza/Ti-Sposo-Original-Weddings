@@ -20,6 +20,11 @@ body {
   width: 100vw;
 }
 
+#header {
+  position: relative;
+  z-index: 20;
+}
+
 #header:after,
 #header:before {
   content: "";
@@ -121,9 +126,18 @@ nav a:active {
 }
 
 #aboutUs {
-  background-color: darkturquoise;
+  background-color: #d1feff;
   height: 100vh;
   width: 100vw;
+}
+
+.titleOnas {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: deeppink;
+  padding-top: 150px;
+  padding-bottom: 50px;
 }
 
 .idCards {
@@ -132,18 +146,69 @@ nav a:active {
   align-items: center;
 }
 
-.col-4 div {
-  float: left;
+.frame,
+.frameLogo {
+  background-color: #71b2c0;
+  height: 625px;
+  width: 450px;
+}
+
+.frameLogo {
+  width: 500px;
+}
+
+.onasPic,
+.onasPicLogo {
+  height: 500px;
+  width: 450px;
+  background-size: cover;
+}
+
+.onasPicLogo {
+  width: 500px;
+}
+
+.smallTittleOnas,
+.smallTittleOnasLogo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 25px;
+}
+
+.smallTittleOnasLogo {
+  margin-top: 40px;
+}
+
+.smallTittleOnasDescript {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.aboutMagda,
+.aboutLogo {
+  background-color: black;
+  color: #71b2c0;
+  height: 500px;
+  width: 450px;
+  z-index: 20;
+  font-size: 25px;
+  text-align: center;
+}
+
+.aboutLogo {
+  width: 500px;
 }
 
 #howItWorks {
-  background-color: deeppink;
+  background-color: #ff7ac2;
   height: 100vh;
   width: 100vw;
 }
 
 #offer {
-  background-color: darkturquoise;
+  background-color: #d1feff;
   height: 100vh;
   width: 100vw;
 }
@@ -154,6 +219,13 @@ nav a:active {
   width: 100vw;
 }
 
+.row:after,
+.row:before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .col-3 div {
   float: left;
 }
@@ -162,14 +234,23 @@ nav a:active {
   width: 25%;
   height: 483px;
   background-size: cover;
+  opacity: 0.7;
 }
 
 .galleryPic:hover {
-  opacity: 0.5;
+  opacity: 1;
+}
+
+.picNames {
+  font-size: 60px;
+  padding-top: 405px;
+  color: deeppink;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
 #contact {
-  background-color: darkturquoise;
+  background-color: #d1feff;
   height: 100vh;
   width: 100vw;
 }

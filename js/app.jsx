@@ -19,8 +19,9 @@ const whitePic = require("file-loader!../images/white.jpg");
 const bluePic = require("file-loader!../images/blue.jpg");
 const naturaPic = require("file-loader!../images/natura.jpg");
 const mountainsPic = require("file-loader!../images/mountains.jpg");
-
-class App extends React.Component{
+const tekla = require("file-loader!../images/magda.JPG");
+const iza = require("file-loader!../images/tisposo_onas_Iza.jpg");
+class App extends React.Component {
   render() {
     return (
       <div>
@@ -34,121 +35,192 @@ class App extends React.Component{
     );
   }
 }
-class Home extends React.Component{
+
+class Home extends React.Component {
   render() {
     return (
-      <section id="home" style={{backgroundImage: 'url(./js/' +backgroundPic + ')'}}>
-        <div className="container" >
+      <section id="home" style={{
+        backgroundImage: 'url(./js/' + backgroundPic + ')'
+      }}>
+        <div className="container">
           <div id="header">
             <div className="col-12">
-            <nav>
-              <a href="#home" style={{color: 'deeppink'}}>HOME</a>
-              <a href="#aboutUs" style={{color: 'darkturquoise'}}>O NAS</a>
-              <a href="#howItWorks" style={{color: 'deeppink'}}>JAK TO DZIAŁA</a>
-              <a href="#offer" style={{color: 'darkturquoise'}}>OFERTA</a>
-              <a href="#gallery" style={{color: 'deeppink'}}>GALERIA</a>
-              <a href="#contact" style={{color: 'darkturquoise'}}>KONTAKT</a>
-            </nav>
-          </div>
-          </div>
-          <div id="foot">
-            <p className="textBlue">Organizacja oraz Koordynacja</p>
-            <p className="textPink">Ślubów oraz Wesel</p>
-          </div>
-        </div>
-      </section>
-    );
-  }
-}
-class AboutUs extends React.Component{
-  render() {
-    return (
-      <section id="aboutUs">
-       <div className="container">
-        <div className="row idCards">
-          <div className="col-4">
-            <div>Magdalena Tekiel</div>
-            <div>Nasza Agencj Ślubna</div>
-            <div>Izabela Zackiewicz</div>
-          </div>
-        </div>
-       </div>
-      </section>
-    );
-  }
-}
-class HowItWorks extends React.Component{
-  render() {
-    return (
-      <section id="howItWorks">
-        <div className="container">
-
-        </div>
-      </section>
-    );
-  }
-}
-class Offer extends React.Component{
-  render() {
-    return (
-      <section id="offer">
-        <div className="container">
-
-        </div>
-      </section>
-    );
-  }
-}
-class Gallery extends React.Component{
-  render() {
-    return (
-      <section id="gallery">
-        <div className="container">
-
-        </div>
-        <div id="galleryBody">
-          <div className="row">
-           <div className="col-3">
-             <div className="galleryPic" style={{backgroundImage: 'url(./js/' +usaPic + ')'}}></div>
-           </div>
-           <div className="col-3">
-             <div className="galleryPic" style={{backgroundImage: 'url(./js/' +violetPic + ')'}}></div>
+                  <nav id="navi">
+                    <a href="#home" style={{
+                      color: 'deeppink'
+                    }}>HOME</a>
+                    <a href="#aboutUs" style={{
+                      color: 'darkturquoise'
+                    }}>O NAS</a>
+                    <a href="#howItWorks" style={{
+                      color: 'deeppink'
+                    }}>JAK TO DZIAŁA</a>
+                    <a href="#offer" style={{
+                      color: 'darkturquoise'
+                    }}>OFERTA</a>
+                    <a href="#gallery" style={{
+                      color: 'deeppink'
+                    }}>GALERIA</a>
+                    <a href="#contact" style={{
+                      color: 'darkturquoise'
+                    }}>KONTAKT</a>
+                  </nav>
+                </div>
+              </div>
+              <div id="foot">
+                <p className="textBlue">Organizacja oraz Koordynacja</p>
+                <p className="textPink">Ślubów oraz Wesel</p>
+              </div>
             </div>
-            <div className="col-3">
-              <div className="galleryPic" style={{backgroundImage: 'url(./js/' +flowersPic + ')'}}></div>
-            </div>
-            <div className="col-3">
-             <div className="galleryPic" style={{backgroundImage: 'url(./js/' +lightpinkPic + ')'}}></div>
-            </div>
-           </div>
-          <div className="row">
-           <div className="col-3">
-             <div className="galleryPic" style={{backgroundImage: 'url(./js/' +bluePic + ')'}}></div>
-             <div className="galleryPic" style={{backgroundImage: 'url(./js/' +whitePic + ')'}}></div>
-             <div className="galleryPic" style={{backgroundImage: 'url(./js/' +naturaPic + ')'}}></div>
-             <div className="galleryPic" style={{backgroundImage: 'url(./js/' +mountainsPic + ')'}}></div>
-           </div>
-          </div>
-        </div>
+          </section>
+          ); } }
+          class AboutUs extends React.Component{
+            constructor(props){
+              super(props)
+              this.state = {
+                display: "none",
+                displayL: "none",
+                displayI: "none"
+              }
+            }
+            clickMagda = ()=>{
+              this.setState({display: "block"})
+            }
+            leaveMagda = ()=>{
+              this.setState({display:"none"})
+            }
+            clickLogo = ()=>{
+              this.setState({displayL:"block"})
+            }
+            leaveLogo = ()=>{
+              this.setState({displayL:"none"})
+            }
+            clickIza = ()=>{
+              this.setState({displayI:"block"})
+            }
+            leaveIza = ()=>{
+              this.setState({displayI:"none"})
+            }
+            render() {
+            return (
+              <section id="aboutUs">
+                <div className="container">
+                  <div className="row titleId">
+                    <div className="col-12">
+                      <div className="titleOnas">Krótka historia naszej firmy</div>
+                    </div>
+                  </div>
+                  <div className="row idCards">
+                    <div className="col-4">
 
-      </section>
-    );
-  }
+                      <div className="frame" onMouseLeave={this.leaveMagda}>
+                        <div onClick={this.clickMagda} className="onasPic" style={{
+                          backgroundImage: 'url(./js/' + tekla + ')'
+                        }}><div className="aboutMagda" style={{display: this.state.display}}>Nazywam się Magdalena Tekiel, dla przyjaciół Tekla. Jestem w szczęśliwym związku od ponad 5 lat i za nic nie zamieniłabym sekundy spędzonej z moją drugą połówką. Przez 17 lat byłam profesjonalną siatkarką co umożliwiło mi na rozwinięcie w sobie roli team leadera, silnych cech organizacyjnych oraz opanowania w trudnych sytuacjach. Fach ten obdarzył mnie również możliwością podróżowania. Przez 4 lata mieszkałam w USA oraz rok we Włoszech. Z wykształcenia jestem dyplomatką, co pozwoliło mi na wzorowe opanowanie sztuki sovoir - vivre. Od powrotu do Polski pracowałam w sprzedaży, marketingu oraz zajmowałam się rozwojem biznesu na rożnych płaszczyznach organizacji. Od zawsze wiedziałam, że celem mojego życia jest uszczęśliwianie ludzi, a obecna praca przy tak wyjątkowych wydarzeniach zakochanych w sobie osób jest dla mnie jego spełnieniem. </div></div>
+                        <p className="smallTittleOnas">Magdalena Tekiel</p>
+                        <p className="smallTittleOnasDescript">Wedding Planner</p>
+                      </div>
+                    </div>
+                    <div className="col-4">
+                      <div className="frameLogo" onMouseLeave={this.leaveLogo}>
+                        <div onClick={this.clickLogo} className="onasPicLogo" style={{
+                          backgroundImage: 'url(./js/' + logo + ')'
+                        }}><div className="aboutLogo" style={{display: this.state.displayL}}>Ti Sposo jest nową agencją na rynku usług ślubnych.
+Ti Sposo Original Weddings to kolejny, najnowszy profil działalności firmy  PERFEKT Zofia Wróblewska funkcjonującej  na rynku od 1994 roku. Ten segment firmy zarządzany jest przez dwie kreatywne i pełne dobrej energii młode kobiety: Magdalenę Tekiel oraz Izabelę Zackiewicz.
+Ti SposoOriginalWeddings zajmuje się kompleksową organizacją ślubów, służy profesjonalną poradą oraz ratuje w nieoczekiwanych okolicznościach w dniu ślubu.
+Magdalena oraz Izabela organizują uroczystości biorąc pod uwagę gust klienta oraz łącząc go z własnymi inspiracjami i wyobraźnią. Energiczny zespół Ti Sposo jest otwarty na wyzwania czyli organizacje najbardziej niespotykanych ślubów i wesel.
+Ti Sposo Original Weddings wyróżnia się na rynku usług ślubnych doświadczeniem ze Stanów Zjednoczonych Ameryki - potentata na rynku ślubnym. To doświadczenie  zapewni oryginalne, niespotykane rozwiązania, które uczynią Państwa ślub i wesele wydarzeniem niezapomnianym i wyjątkowym. </div></div>
+                        <p className="smallTittleOnasLogo">Nasza Agencja</p>
+                      </div>
+                    </div>
+                    <div className="col-4">
+                      <div className="frame" onMouseLeave={this.leaveIza}>
+                        <div onClick={this.clickIza} className="onasPic" style={{
+                          backgroundImage: 'url(./js/' + iza + ')'
+                        }}><div className="aboutMagda" style={{display: this.state.displayI}}>Nazywam się Izabela Zackiewicz. Jestem szczęśliwą mężatką, a ślub rzeczywiście był jednym z najwspanialszych dni w moim życiu. Od prawie dwudziestu lat jestem wyczynowym sportowcem, co nauczyło mnie dyscypliny, organizacji czasu, i przede wszystkim działania w sytuacjach stresowych. Z wykształcenia jestem psychologiem, a dyplom uzyskałam w USA gdzie mieszkałam kilka lat. Lubię poznawać nowe kultury, dlatego przez krótki okres czasu mieszkałam również w Szwajcarii i Niemczech. Podróże nauczyły mnie otwartości na ludzi. Uwielbiam śluby i wesela, ponieważ taki jak i ludzi – nie ma dwóch takich samych. </div></div>
+                        <p className="smallTittleOnas">Izabela Zackiewicz</p>
+                        <p className="smallTittleOnasDescript">Wedding Planner</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            );
+          }
 }
-class Contact extends React.Component{
-  render() {
-    return (
-      <section id="contact">
-        <div className="container">
+          class HowItWorks extends React.Component{render() {
+            return (
+              <section id="howItWorks">
+                <div className="container"></div>
+              </section>
+            );
+          }
+}
+          class Offer extends React.Component{render() {
+            return (
+              <section id="offer">
+                <div className="container"></div>
+              </section>
+            );
+          }
+}
+          class Gallery extends React.Component{render() {
+            return (
+              <section id="gallery">
+                <div className="container"></div>
+                <div id="galleryBody">
+                  <div className="row">
+                    <div className="col-3">
+                      <div className="galleryPic" style={{
+                        backgroundImage: 'url(./js/' + usaPic + ')'
+                      }}><p className="picNames">Jesienne Wesele</p></div>
+                    </div>
+                    <div className="col-3">
+                      <div className="galleryPic" style={{
+                        backgroundImage: 'url(./js/' + violetPic + ')'
+                      }}><p className="picNames">Amerykańskie Wesele</p></div>
+                    </div>
+                    <div className="col-3">
+                      <div className="galleryPic" style={{
+                        backgroundImage: 'url(./js/' + flowersPic + ')'
+                      }}><p className="picNames">Różowe Wesele</p></div>
+                    </div>
+                    <div className="col-3">
+                      <div className="galleryPic" style={{
+                        backgroundImage: 'url(./js/' + lightpinkPic + ')'
+                      }}><p className="picNames">Wesele z Chrzcinami</p></div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-3">
+                      <div className="galleryPic" style={{
+                        backgroundImage: 'url(./js/' + bluePic + ')'
+                      }}><p className="picNames">Szafirowe Wesele</p></div>
+                      <div className="galleryPic" style={{
+                        backgroundImage: 'url(./js/' + whitePic + ')'
+                      }}><p className="picNames">Białe Wesele</p></div>
+                      <div className="galleryPic" style={{
+                        backgroundImage: 'url(./js/' + naturaPic + ')'
+                      }}><p className="picNames">Industrialne Wesele</p></div>
+                      <div className="galleryPic" style={{
+                        backgroundImage: 'url(./js/' + mountainsPic + ')'
+                      }}><p className="picNames">Góralskie Wesele</p></div>
+                    </div>
+                  </div>
+                </div>
 
-        </div>
-      </section>
-    );
-  }
+              </section>
+            );
+          }
 }
-document.addEventListener('DOMContentLoaded', function(){
-    ReactDOM.render(
-        <App/>,
-        document.getElementById('app')
-    );
-});
+          class Contact extends React.Component{render() {
+            return (
+              <section id="contact">
+                <div className="container"></div>
+              </section>
+            );
+          }
+}
+          document.addEventListener('DOMContentLoaded', function(){ReactDOM.render(
+            <App/>, document.getElementById('app'));
+})
