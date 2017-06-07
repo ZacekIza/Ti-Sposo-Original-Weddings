@@ -253,6 +253,34 @@ nav a:active {
   background-color: #d1feff;
   height: 100vh;
   width: 100vw;
+  background-size: cover;
+}
+
+.contactText {
+  text-align: center;
+  font-size: 23px;
+  margin: 100px;
+}
+
+.contactTextGirls {
+  font-size: 23px;
+  margin-top: 200px;
+  margin-right: 980px;
+  text-align: center;
+}
+
+.contactRow {
+  display: flex;
+}
+
+.contactMagda {
+  padding-top: 95px;
+}
+
+.contactIza {
+  font-size: 34px;
+  font-weight: bold;
+  padding-top: 95px;
 }
 
 #logo {

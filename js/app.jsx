@@ -21,6 +21,7 @@ const naturaPic = require("file-loader!../images/natura.jpg");
 const mountainsPic = require("file-loader!../images/mountains.jpg");
 const tekla = require("file-loader!../images/magda.JPG");
 const iza = require("file-loader!../images/tisposo_onas_Iza.jpg");
+const contact = require("file-loader!../images/contact.jpg");
 class App extends React.Component {
   render() {
     return (
@@ -215,8 +216,33 @@ Ti Sposo Original Weddings wyróżnia się na rynku usług ślubnych doświadcze
 }
           class Contact extends React.Component{render() {
             return (
-              <section id="contact">
-                <div className="container"></div>
+              <section id="contact" style={{
+                backgroundImage: 'url(./js/' + contact + ')'
+              }}>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-4"/>
+                    <div className="col-4">
+                      <div className="contactText">
+                        <h2>IKJ Perfekt<br/> Ti Sposo Original Weddings<br/> Zofia Wróblewska</h2>
+                        <p>
+                          NIP: 5271010450 <br/>REGON:010860841<br/>Ul. Dębicka 29/3<br/>01-462 Warszawa
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                    <div className="col-4"/>
+                  <div className="row contactRow">
+                    <div className="col-4 contactTextGirls contactMagda">
+                      <h1>Magdalena Tekiel</h1>
+                      <p>Telefon:<br/><b>516 684 841</b><br/>Email:<br/> <b>magdalena.tekiel@gmail.com</b></p>
+                    </div>
+                    <div className="col-4 contactTextGirls ">
+                      <p className="contactIza">Izabela Zackiewicz </p>
+                      <p>Telefon:<br/><b>664 435 449</b><br/>Email:<br/> <b>zackiewicz.iza@gmail.com</b></p>
+                    </div>
+                  </div>
+                </div>
               </section>
             );
           }

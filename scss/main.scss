@@ -155,7 +155,7 @@ nav {
 .aboutLogo{
   @extend .aboutMagda;
   width: 500px;
-}  
+}
 #howItWorks{
   background-color: lighten($mainPink, 20%);
   @include allScreen;
@@ -193,6 +193,29 @@ nav {
 #contact{
   background-color: lighten($mainBlue, 50%);
   @include allScreen;
+  background-size: cover;
+}
+.contactText{
+  text-align: center;
+  font-size: 23px;
+  margin: 100px;
+}
+.contactTextGirls{
+  font-size: 23px;
+  margin-top: 200px;
+  margin-right: 980px;
+  text-align: center;
+}
+.contactRow{
+  display: flex;
+}
+.contactMagda{
+  padding-top: 95px;
+}
+.contactIza{
+  font-size: 34px;
+  font-weight: bold;
+  padding-top: 95px;
 }
 #logo{
   height: 200px;
