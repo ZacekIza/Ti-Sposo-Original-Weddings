@@ -22,6 +22,12 @@ const mountainsPic = require("file-loader!../images/mountains.jpg");
 const tekla = require("file-loader!../images/magda.JPG");
 const iza = require("file-loader!../images/tisposo_onas_Iza.jpg");
 const contact = require("file-loader!../images/contact.jpg");
+const venue = require("file-loader!../images/venue.jpg");
+const photographer = require("file-loader!../images/photographer.jpg");
+const music = require("file-loader!../images/music.jpg");
+const flowers = require("file-loader!../images/flowers.jpg");
+const themee = require("file-loader!../images/themee.jpg");
+const elsee = require("file-loader!../images/else.jpg");
 class App extends React.Component {
   render() {
     return (
@@ -160,7 +166,51 @@ Ti Sposo Original Weddings wyróżnia się na rynku usług ślubnych doświadcze
           class Offer extends React.Component{render() {
             return (
               <section id="offer">
-                <div className="container"></div>
+                <div className="container">
+                 <div className="row">
+                  <div className="col-12 offerText">
+                    Nasza Oferta Zawiera Międzyinnymi:
+                  </div>
+                 </div>
+                 <div className="row offerRow">
+                   <div className="col-2">
+                       <div className="offerPics" style={{
+                         backgroundImage: 'url(./js/' + venue + ')'
+                       }}></div>
+                     <p className="offerTextEach"><b>VENUE</b><br/>Pomoc w znalezieniu oraz podpisaniu umowy z najodpowiedniejszym miejscem na uroczystość.</p>
+                     </div>
+                   <div className="col-2 extra">
+                       <div className="offerPics " style={{
+                         backgroundImage: 'url(./js/' + music + ')'
+                       }}></div>
+                     <p className="offerTextEach"><b>MUZYKA</b><br/>Pomoc w znalezieniu oraz podpisaniu umowy z najodpowiedniejszym DJ-em lub zespołem muzycznym.</p>
+                     </div>
+                     <div className="col-2 extra">
+                         <div className="offerPics " style={{
+                           backgroundImage: 'url(./js/' + photographer + ')'
+                         }}></div>
+                       <p className="offerTextEach"><b>FOTO & VIDEO</b><br/>Pomoc w znalezieniu oraz podpisaniu umowy z najodpowiedniejszą ekipą fotograficzną i/lub filmową.</p>
+                     </div>
+                     <div className="col-2 extra">
+                           <div className="offerPics " style={{
+                             backgroundImage: 'url(./js/' + flowers + ')'
+                           }}></div>
+                         <p className="offerTextEach"><b>FLORYSTYKA</b><br/>Pomoc w znalezieniu oraz podpisaniu umowy z najodpowiedniejszą firmą florystyczną.</p>
+                     </div>
+                     <div className="col-2">
+                         <div className="offerPics" style={{
+                           backgroundImage: 'url(./js/' + themee + ')'
+                         }}></div>
+                       <p className="offerTextEach"><b>TEMAT PRZEWODNI</b><br/>Pomoc przy wymyślaniu tematu przewodniego ślubu oraz wesela, oraz pomoc przy znjadowaniu odpowiednich akcesoriów do tematu przewodniego.</p>
+                     </div>  
+                     <div className="col-2">
+                         <div className="offerPics" style={{
+                           backgroundImage: 'url(./js/' + elsee + ')'
+                         }}></div>
+                       <p className="offerTextEach"><b>CAŁA RESZTA</b><br/>Pomoc przy organizacji papeterii ślubnej, formalności ślubnych, ubioru do ślubu, wizażu, samochodu i wszystkiego czego Para Młoda sobie wymyśli.</p>
+                     </div>
+                   </div>
+                </div>
               </section>
             );
           }
