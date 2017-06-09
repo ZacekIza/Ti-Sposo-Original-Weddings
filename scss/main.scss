@@ -102,7 +102,7 @@ nav {
   text-align: center;
   font-size: 60px;
   font-weight: bold;
-  color: $mainPink;
+  // color: $mainPink;
   padding-top: 150px;
   padding-bottom: 50px;
 }
@@ -115,19 +115,34 @@ nav {
   background-color: #71b2c0;
   height: 625px;
   width: 450px;
+  border-radius: 6% 0 0 6%;
+}
+.frameIza{
+  @extend .frame;
+  border-radius: 0 6% 6% 0;
 }
 .frameLogo{
   @extend .frame;
   width: 500px;
+  border-radius: 0;
 }
 .onasPic{
   height: 500px;
   width: 450px;
   background-size: cover;
 }
+.onasPicMadzia{
+  @extend .onasPic;
+  border-radius: 6% 0 0 0;
+}
+.onasPicIza{
+  @extend .onasPic;
+  border-radius: 0 6% 0 0;
+}
 .onasPicLogo{
   @extend .onasPic;
   width: 500px;
+  background-position-x: 35%;
 }
 .smallTittleOnas{
   text-align: center;
@@ -168,6 +183,8 @@ nav {
 .offerRow{
   display: flex;
   padding-top: 100px;
+  margin-right: -150px;
+  margin-left: -150px;
 }
 .offerText{
   font-size: 40px;
@@ -177,17 +194,18 @@ nav {
 }
 .offerPics{
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   background-size: cover;
 }
 .offerTextEach{
   text-align: center;
   padding-top: 20px;
-  font-size: 21px;
+  font-size: 25px;
+  width: 200px;
 }
 .extra{
-  padding-left: 40px;
+  // padding-left: 40px;
 }
 #gallery{
   background-color: white;

@@ -121,7 +121,7 @@ class Home extends React.Component {
                     <div className="col-4">
 
                       <div className="frame" onMouseLeave={this.leaveMagda}>
-                        <div onClick={this.clickMagda} className="onasPic" style={{
+                        <div onMouseEnter={this.clickMagda} className="onasPicMadzia" style={{
                           backgroundImage: 'url(./js/' + tekla + ')'
                         }}><div className="aboutMagda" style={{display: this.state.display}}>Nazywam się Magdalena Tekiel, dla przyjaciół Tekla. Jestem w szczęśliwym związku od ponad 5 lat i za nic nie zamieniłabym sekundy spędzonej z moją drugą połówką. Przez 17 lat byłam profesjonalną siatkarką co umożliwiło mi na rozwinięcie w sobie roli team leadera, silnych cech organizacyjnych oraz opanowania w trudnych sytuacjach. Fach ten obdarzył mnie również możliwością podróżowania. Przez 4 lata mieszkałam w USA oraz rok we Włoszech. Z wykształcenia jestem dyplomatką, co pozwoliło mi na wzorowe opanowanie sztuki sovoir - vivre. Od powrotu do Polski pracowałam w sprzedaży, marketingu oraz zajmowałam się rozwojem biznesu na rożnych płaszczyznach organizacji. Od zawsze wiedziałam, że celem mojego życia jest uszczęśliwianie ludzi, a obecna praca przy tak wyjątkowych wydarzeniach zakochanych w sobie osób jest dla mnie jego spełnieniem. </div></div>
                         <p className="smallTittleOnas">Magdalena Tekiel</p>
@@ -130,7 +130,7 @@ class Home extends React.Component {
                     </div>
                     <div className="col-4">
                       <div className="frameLogo" onMouseLeave={this.leaveLogo}>
-                        <div onClick={this.clickLogo} className="onasPicLogo" style={{
+                        <div onMouseEnter={this.clickLogo} className="onasPicLogo" style={{
                           backgroundImage: 'url(./js/' + logo + ')'
                         }}><div className="aboutLogo" style={{display: this.state.displayL}}>Ti Sposo jest nową agencją na rynku usług ślubnych.
 Ti Sposo Original Weddings to kolejny, najnowszy profil działalności firmy  PERFEKT Zofia Wróblewska funkcjonującej  na rynku od 1994 roku. Ten segment firmy zarządzany jest przez dwie kreatywne i pełne dobrej energii młode kobiety: Magdalenę Tekiel oraz Izabelę Zackiewicz.
@@ -141,8 +141,8 @@ Ti Sposo Original Weddings wyróżnia się na rynku usług ślubnych doświadcze
                       </div>
                     </div>
                     <div className="col-4">
-                      <div className="frame" onMouseLeave={this.leaveIza}>
-                        <div onClick={this.clickIza} className="onasPic" style={{
+                      <div className="frameIza" onMouseLeave={this.leaveIza}>
+                        <div onMouseEnter={this.clickIza} className="onasPicIza" style={{
                           backgroundImage: 'url(./js/' + iza + ')'
                         }}><div className="aboutMagda" style={{display: this.state.displayI}}>Nazywam się Izabela Zackiewicz. Jestem szczęśliwą mężatką, a ślub rzeczywiście był jednym z najwspanialszych dni w moim życiu. Od prawie dwudziestu lat jestem wyczynowym sportowcem, co nauczyło mnie dyscypliny, organizacji czasu, i przede wszystkim działania w sytuacjach stresowych. Z wykształcenia jestem psychologiem, a dyplom uzyskałam w USA gdzie mieszkałam kilka lat. Lubię poznawać nowe kultury, dlatego przez krótki okres czasu mieszkałam również w Szwajcarii i Niemczech. Podróże nauczyły mnie otwartości na ludzi. Uwielbiam śluby i wesela, ponieważ taki jak i ludzi – nie ma dwóch takich samych. </div></div>
                         <p className="smallTittleOnas">Izabela Zackiewicz</p>
@@ -202,7 +202,7 @@ Ti Sposo Original Weddings wyróżnia się na rynku usług ślubnych doświadcze
                            backgroundImage: 'url(./js/' + themee + ')'
                          }}></div>
                        <p className="offerTextEach"><b>TEMAT PRZEWODNI</b><br/>Pomoc przy wymyślaniu tematu przewodniego ślubu oraz wesela, oraz pomoc przy znjadowaniu odpowiednich akcesoriów do tematu przewodniego.</p>
-                     </div>  
+                     </div>
                      <div className="col-2">
                          <div className="offerPics" style={{
                            backgroundImage: 'url(./js/' + elsee + ')'

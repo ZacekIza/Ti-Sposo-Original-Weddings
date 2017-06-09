@@ -13043,7 +13043,7 @@ var AboutUs = function (_React$Component3) {
                 { className: 'frame', onMouseLeave: this.leaveMagda },
                 _react2.default.createElement(
                   'div',
-                  { onClick: this.clickMagda, className: 'onasPic', style: {
+                  { onMouseEnter: this.clickMagda, className: 'onasPicMadzia', style: {
                       backgroundImage: 'url(./js/' + tekla + ')'
                     } },
                   _react2.default.createElement(
@@ -13072,7 +13072,7 @@ var AboutUs = function (_React$Component3) {
                 { className: 'frameLogo', onMouseLeave: this.leaveLogo },
                 _react2.default.createElement(
                   'div',
-                  { onClick: this.clickLogo, className: 'onasPicLogo', style: {
+                  { onMouseEnter: this.clickLogo, className: 'onasPicLogo', style: {
                       backgroundImage: 'url(./js/' + logo + ')'
                     } },
                   _react2.default.createElement(
@@ -13093,10 +13093,10 @@ var AboutUs = function (_React$Component3) {
               { className: 'col-4' },
               _react2.default.createElement(
                 'div',
-                { className: 'frame', onMouseLeave: this.leaveIza },
+                { className: 'frameIza', onMouseLeave: this.leaveIza },
                 _react2.default.createElement(
                   'div',
-                  { onClick: this.clickIza, className: 'onasPic', style: {
+                  { onMouseEnter: this.clickIza, className: 'onasPicIza', style: {
                       backgroundImage: 'url(./js/' + iza + ')'
                     } },
                   _react2.default.createElement(
