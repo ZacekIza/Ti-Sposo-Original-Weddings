@@ -176,6 +176,14 @@ nav {
   background-color: lighten($mainPink, 20%);
   @include allScreen;
 }
+.colHow{
+  display: flex;
+}
+.howPics{
+  height: 483px;
+  width: 100%;
+  background-size: cover;
+}
 #offer{
   background-color: lighten($mainBlue, 50%);
   @include allScreen;

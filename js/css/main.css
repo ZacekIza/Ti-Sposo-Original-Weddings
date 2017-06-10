@@ -225,6 +225,16 @@ nav a:active {
   width: 100vw;
 }
 
+.colHow {
+  display: flex;
+}
+
+.howPics {
+  height: 483px;
+  width: 100%;
+  background-size: cover;
+}
+
 #offer {
   background-color: #d1feff;
   height: 100vh;
@@ -234,6 +244,8 @@ nav a:active {
 .offerRow {
   display: flex;
   padding-top: 100px;
+  margin-right: -150px;
+  margin-left: -150px;
 }
 
 .offerText {
@@ -245,19 +257,16 @@ nav a:active {
 
 .offerPics {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   background-size: cover;
 }
 
 .offerTextEach {
   text-align: center;
   padding-top: 20px;
-  font-size: 21px;
-}
-
-.extra {
-  padding-left: 40px;
+  font-size: 25px;
+  width: 200px;
 }
 
 #gallery {

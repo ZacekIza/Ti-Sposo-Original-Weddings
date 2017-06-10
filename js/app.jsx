@@ -28,6 +28,12 @@ const music = require("file-loader!../images/music.jpg");
 const flowers = require("file-loader!../images/flowers.jpg");
 const themee = require("file-loader!../images/themee.jpg");
 const elsee = require("file-loader!../images/else.jpg");
+const callme  = require("file-loader!../images/zadzwon.jpg");
+const meeting = require("file-loader!../images/spotkanie.jpg");
+const youroffer = require("file-loader!../images/indywidualna_oferta.jpg");
+const contract = require("file-loader!../images/umowa.jpg");
+const organisation = require("file-loader!../images/wizja.jpeg");
+const finalday= require("file-loader!../images/obraczki.jpg");
 class App extends React.Component {
   render() {
     return (
@@ -158,7 +164,40 @@ Ti Sposo Original Weddings wyróżnia się na rynku usług ślubnych doświadcze
           class HowItWorks extends React.Component{render() {
             return (
               <section id="howItWorks">
-                <div className="container"></div>
+                  <div className="row colHow">
+                    <div className="col-4 howPics">
+                      <div className="howPics" style={{
+                        backgroundImage: 'url(./js/' + callme + ')'
+                      }}></div>
+                    </div>
+                    <div className="col-4 howPics">
+                      <div className="howPics" style={{
+                        backgroundImage: 'url(./js/' + meeting + ')'
+                      }}></div>
+                    </div>
+                    <div className="col-4 howPics">
+                      <div className="howPics" style={{
+                        backgroundImage: 'url(./js/' + youroffer + ')'
+                      }}></div>
+                    </div>
+                  </div>
+                  <div className="row colHow">
+                    <div className="col-4 howPics">
+                      <div className="howPics" style={{
+                        backgroundImage: 'url(./js/' + contract + ')'
+                      }}></div>
+                    </div>
+                    <div className="col-4 howPics">
+                      <div className="howPics" style={{
+                        backgroundImage: 'url(./js/' + organisation + ')'
+                      }}></div>
+                    </div>
+                    <div className="col-4 howPics">
+                      <div className="howPics" style={{
+                        backgroundImage: 'url(./js/' + finalday + ')'
+                      }}></div>
+                    </div>
+                  </div>
               </section>
             );
           }
